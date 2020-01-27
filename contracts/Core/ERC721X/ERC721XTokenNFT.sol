@@ -1,13 +1,13 @@
 pragma solidity ^0.5.6;
 
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721Full.sol";
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/IERC721Receiver.sol";
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/Address.sol";
 import "../../Libraries/ObjectsLib.sol";
 
 
 // Packed NFT that has storage which is batch transfer compatible
-contract ERC721XTokenNFT is ERC721 {
+contract ERC721XTokenNFT is ERC721Full {
 
     using ObjectLib for ObjectLib.Operations;
     using ObjectLib for uint256;
