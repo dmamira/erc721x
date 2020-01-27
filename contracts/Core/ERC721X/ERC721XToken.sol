@@ -5,7 +5,7 @@ import "./../../Interfaces/ERC721X.sol";
 import "./../../Interfaces/ERC721XReceiver.sol";
 import "./ERC721XTokenNFT.sol";
 
-import "OpenZeppelin/openzeppelin-contracts/contracts/utils/Address.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/Address.sol";
 import "./../../Libraries/ObjectsLib.sol";
 
 
