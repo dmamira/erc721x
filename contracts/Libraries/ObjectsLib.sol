@@ -1,6 +1,6 @@
 pragma solidity ^0.5.6;
 
-import "openzeppelin-solidity/contracts/math/SafeMath.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/math/SafeMath.sol";
 
 library ObjectLib {
 
