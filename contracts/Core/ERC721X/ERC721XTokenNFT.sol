@@ -8,7 +8,7 @@ import "../../Libraries/ObjectsLib.sol";
 
 
 // Packed NFT that has storage which is batch transfer compatible
-contract ERC721XTokenNFT is ERC721 {
+contract ERC721XTokenNFT is ERC721,ERC721Metadata {
 
     using ObjectLib for ObjectLib.Operations;
     using ObjectLib for uint256;
@@ -182,6 +182,10 @@ contract ERC721XTokenNFT is ERC721 {
         tokenOwner[_tokenId] = _to;
         emit Transfer(_from, _to, _tokenId);
     }
+    
+    function setTokenURI(uint256 tokenId, string memory _tokenURI) internal{
+    _setTokenURI(tokenId,_tokenURI);
+}
 
     function tokenURI(uint256 _tokenId) public view returns (string memory) {
         require(exists(_tokenId), "Token doesn't exist");
