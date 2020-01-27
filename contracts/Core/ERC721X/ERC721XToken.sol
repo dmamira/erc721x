@@ -111,6 +111,9 @@ contract ERC721XToken is ERC721X, ERC721XTokenNFT {
         // Batch Transfering
         _batchTransferFrom(_from, _to, _tokenIds, _amounts);
     }
+     function setTokenURI(uint256 tokenId, string memory _tokenURI) internal{
+    setTokenURI(tokenId,_tokenURI);
+    }
 
     /**
      * @dev transfer objects from different tokenIds to specified address
