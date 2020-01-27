@@ -7,10 +7,11 @@ import "./ERC721XTokenNFT.sol";
 
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/Address.sol";
 import "./../../Libraries/ObjectsLib.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721Metadata.sol";
 
 
 // Additional features over NFT token that is compatible with batch transfers
-contract ERC721XToken is ERC721X, ERC721XTokenNFT {
+contract ERC721XToken is ERC721X, ERC721XTokenNFT,ERC721Metadata {
 
     using ObjectLib for ObjectLib.Operations;
     using Address for address;
